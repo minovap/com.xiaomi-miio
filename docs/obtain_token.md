@@ -118,3 +118,13 @@ echo -ne '\x21\x31\x00\x20\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x
 
 While running this you have to listen with Wireshark or tcpdump for UDP packages sent as anser by the robot.
 Extract the last 16 bytes of the answer and convert them to a (32 characters) hexadecimal string using `xxd -p`.
+
+## Method 5 - Use a modified version of the Mi Home app
+This method involves using a modified Android app. The app has been modified to expose the token. As the author is not known it is NOT recommended to install this file on your regular Android phone. Use the BlueStacks Android emulator or a spare phone instead. See this thread for a download link to the APK-file containing the modified Mi Home app: https://community.athom.com/t/xiaomi-mi-roborock-s50-vacuum-cleaner-token/2516/37
+* Setup your device on your phone as usual
+* Download a modified version of the Mi Home app
+* Install BlueStacks Android emulator on your computer
+* Import the modified APK file into the BlueStacks Android emulator and install it
+* Open the app and login with your Xiaomi account
+* Select the device > click the three dots in right upper corner > go to general settings > click network info
+* Your token is available in the network info
